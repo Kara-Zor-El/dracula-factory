@@ -40,3 +40,4 @@ drf /path/to/image/
  ## Credits
 - **Made** with [Schrodinger-Hat's ImageGoNord](https://github.com/Schrodinger-Hat), but with the Dracula palette
 - **Text User Interface (TUI)** made with [rich](https://github.com/willmcgugan/rich)
+- **Color Scheme** from [Base16 Dracula](https://github.com/dracula/base16-dracula-scheme)
