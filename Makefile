@@ -1,16 +1,17 @@
 PREFIX = /usr
 
 all:
-	@echo Run \'make install\' to install odf.
+	@echo Run \'make install\' to install dracula-factory.
 
 install:
+	@echo $(DESTDIR) is destdir and $(PREFIX) is prefix
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
-	@cp -p odf.sh $(DESTDIR)$(PREFIX)/bin/odf
-	@chmod 755 $(DESTDIR)$(PREFIX)/bin/odf
-	@cp -p conv.py $(DESTDIR)$(PREFIX)/bin/odfpy
-	@chmod 755 $(DESTDIR)$(PREFIX)/bin/odfpy
+	@cp -p drf.sh $(DESTDIR)$(PREFIX)/bin/drf
+	@chmod 755 $(DESTDIR)$(PREFIX)/bin/drf
+	@cp -p conv.py $(DESTDIR)$(PREFIX)/bin/drfpy
+	@chmod 755 $(DESTDIR)$(PREFIX)/bin/drfpy
 
 
 uninstall:
-	@rm -rf $(DESTDIR)$(PREFIX)/bin/odf
-	@rm -rf $(DESTDIR)$(PREFIX)/bin/odfpy
+	@rm -rf $(DESTDIR)$(PREFIX)/bin/drf
+	@rm -rf $(DESTDIR)$(PREFIX)/bin/drfpy
